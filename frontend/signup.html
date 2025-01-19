@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>דף הרשמה</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    
+    <div class="container">
+        <form id="signupForm">
+            
+            <label for="name">Username</label>
+            <input type="text" id="name" name="name" placeholder="Enter a username..." required>
+        
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address..." required>
+        
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your Password..."required>
+
+            <label for="confPass">Confirm Password</label>
+            <input type="password" id="confPass" name="confPass" placeholder="Confirm your password" required>
+
+            <div class="error" id="errorMsg">Incorrect password...</div>
+
+            <button onclick="handleSubmit()">Sign up</button>
+            
+        </form>
+    </div>
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+     <script src="signup.js"></script>
+</body>
+</html>
+

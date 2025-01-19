@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-size: 16px; /* לשיפור הקריאות */
+}
+
+form {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column; /* מייצר סדר אנכי */
+    gap: 15px; /* מרווח בין האלמנטים */
+    text-align: left;
+}
+
+button {
+    padding: 10px;
+    width: 100%; 
+    background-color: #1da526;
+    color: white;
+    border: none;
+}
+
+input, textarea, p {
+    direction: ltr;
+    text-align: left;
+    padding: 10px; /* מרווח פנימי בתוך השדה */
+    box-sizing: border-box; /* כדי שהרוחב יכלול את ה-padding וה-border */  
+}
+
+.error {
+    color: red;
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    direction: ltr;
+    text-align: left;
+}
